@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>responsive-images</title>
+  </head>
+
+  <body>
+    <p>
+      image 1
+    </p>
+
+    <img 
+      srcset=
+      "arvore-350w.jpeg 350w,
+      arvore-440w.jpeg 440w,
+      arvore-560w.jpeg 560w"
+
+      sizes=
+      "(max-width: 350px) 400px,
+      (max-width: 440px) 500px,
+      560px"
+
+      src="arvore-560.jpeg" alt="red tree heart"
+    >
+    
+    <p>
+      image 2
+    </p>  
+
+    <img 
+      srcset=
+      "arvore-350w.jpeg,
+      arvore-440w.jpeg 1.5x,
+      arvore-560w.jpeg 2x"
+
+      src="arvore-560w.jpeg" alt="red tree heart"
+    > 
+
+    <p>
+      image 3
+    </p>  
+
+    <img
+      srcset=
+      "image-600w.jpeg 600w,
+      image-800w.jpeg 800w,
+      image-1000w.jpeg 1000w"
+
+      sizes=
+      "(max-width: 600px) 600px,
+      (max-width: 800px) 800px,
+      1000px"
+
+      src="image-1000w.jpeg" alt="men and smoke"
+    >
+
+    <p>
+      image 4
+    </p>
+
+    <picture>
+      <source media="(max-width: 799px)" srcset="image-400w.jpeg">
+      <source media="(min-width: 800px)" srcset="image-1000w.jpeg">
+      <img src="image-1000w.jpeg" alt="men and smoke">
+    </picture>
+
+
+  </body>
+
